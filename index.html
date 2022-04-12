@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate</title>
+
+    <style></style>
   </head>
   <body>
     <div id="smart-button-container">
       <div style="text-align: center">
-        <label for="description">Donate to CarBuildUp </label
+        <label for="description">Support me </label
         ><input
           type="text"
           name="descriptionInput"
@@ -85,7 +87,10 @@
 
         var elArr = [description, amount];
 
-        if (invoiceidDiv.firstChild.innerHTML.length > 1) {
+        if (
+          invoiceidDiv.firstChild.innerHTML &&
+          invoiceidDiv.firstChild.innerHTML.length > 1
+        ) {
           invoiceidDiv.style.display = "block";
         }
 
@@ -101,7 +106,7 @@
           .Buttons({
             style: {
               color: "gold",
-              shape: "pill",
+              shape: "rect",
               label: "paypal",
               layout: "vertical",
             },
