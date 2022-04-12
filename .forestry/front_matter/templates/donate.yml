@@ -1,4 +1,9 @@
 ---
 label: donate
 hide_body: false
-fields: []
+fields:
+- name: donate
+  type: text
+  config:
+    required: false
+  label: donate
